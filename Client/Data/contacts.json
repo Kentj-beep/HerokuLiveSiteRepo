@@ -1,0 +1,21 @@
+{
+    "contacts":
+    [
+        {
+            "FullName": "John Smith",
+            "EmailAddress": "John.Smith@example.com",
+            "ContactNumber": "1234567890"
+        },
+        {
+            "FullName": "Pater Parker",
+            "EmailAddress": "spiderman@example.com",
+            "ContactNumber": "4165555555"
+        },
+        {
+            "FullName": "Jane dough",
+            "EmailAddress": "janedough@dough.ca",
+            "ContactNumber": "0987654321"
+        }
+
+    ]
+}
