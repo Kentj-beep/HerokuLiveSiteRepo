@@ -197,74 +197,13 @@
     function DisplayLoginPage()
     {
         console.log("Login Page");
-        let messageArea = $("#messageArea");
-        messageArea.hide();
-
-        $("#loginButton").on("click", function()
-        {
-            let success = false;
-
-            // Create an empty user object
-            let newUser = new core.User();
-
-            let username = document.forms[0].username.value as string;
-            let password = document.forms[0].password.value as string;
-
-            // use jQuery shortcut to load the users.json file
-            $.get("./Data/users.json", function(data)
-            {
-                // console.log(data);
-                // for every user in the users.json file. loop
-                for (const user of data.users)
-                {
-                    // Check if the username and the password entered matches the user data
-                    
-                    if(username == user.Username && password == user.Password)
-                    {
-                        // Get the user data from the file and assign it to the our empty user object
-                        newUser.fromJSON(user);
-                        success = true;
-                        break;
-                    }
-                    
-                }
-
-                    // If username and password matches..success! -> perform the login sequence
-                    if(success)
-                    {
-                        // Add the user to session storage
-                        sessionStorage.setItem("user", newUser.serialize() as string);
-
-                        // Hide any error messages
-                        messageArea.removeAttr("class").hide();
-
-                        // redirect the user to the secure area of the site - contact-list.html
-                        location.href = "/contact-list";
-                    }
-                    else
-                    {
-                        // Display an erroe message
-                        $("#username").trigger("focus").trigger("select");
-                        messageArea.addClass("alert alert-danger").text("Error: Invalid Login Credentials").show();
-                    }
-            });
-        });
-
-        
-
-        $("#cancelButton").on("click", function()
-        {
-            // Clear the login form
-            document.forms[0].reset();
-
-            // Return to the home page
-            location.href = "/home";
-        })
     }
 
     function DisplayRegisterPage()
     {
         console.log("Register Page");
+
+        // TODO: implement some data entry validation
     }
 
     function Display404()
@@ -278,7 +217,6 @@
         console.log("App Started!");
 
         let page_id = $("body")[0].getAttribute("id");
-        CheckLogin();
 
         switch(page_id)
         {

@@ -1,5 +1,5 @@
 Arguments: 
-  C:\Program Files\nodejs\node.exe C:\Users\jacob\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add @types/ mongoose --dev
+  C:\Program Files\nodejs\node.exe C:\Users\jacob\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add passport password-local passport-local-mongoose
 
 PATH: 
   C:\ProgramData\Oracle\Java\javapath;C:\Program Files\Python38\Scripts\;C:\Program Files\Python38\;C:\Program Files (x86)\VMware\VMware Workstation\bin\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Razer Chroma SDK\bin;C:\Program Files\Razer Chroma SDK\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Users\jacob\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\150\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\150\DTS\Binn\;C:\Program Files\Azure Data Studio\bin;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files (x86)\dotnet\;C:\Apache24\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Program Files\nodejs\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Users\jacob\AppData\Local\Programs\Python\Python310\Scripts\;C:\Users\jacob\AppData\Local\Programs\Python\Python310\;C:\Users\jacob\AppData\Local\Programs\Python\Python39\Scripts\;C:\Users\jacob\AppData\Local\Programs\Python\Python39\;C:\Users\jacob\AppData\Local\Programs\Python\Python38-32\Scripts\;C:\Users\jacob\AppData\Local\Programs\Python\Python38-32\;C:\Users\jacob\AppData\Local\Microsoft\WindowsApps;C:\Users\jacob\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\Azure Data Studio\bin;C:\Program Files\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin;C:\Users\jacob\.dotnet\tools;"C:\ProgramData\Oracle\Java\javapath;C:\Program Files\Python38\Scripts\;C:\Program Files\Python38\;C:\Program Files (x86)\VMware\VMware Workstation\bin\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Razer Chroma SDK\bin;C:\Program Files\Razer Chroma SDK\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Users\jacob\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\150\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\150\DTS\Binn\;C:\Program Files\Azure Data Studio\bin;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files (x86)\dotnet\;C:\Apache24\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Program Files\nodejs\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Apache24\bin";C:\Program Files\Git\bin;C:\Users\jacob\AppData\Roaming\npm;C:\Users\jacob\AppData\Local\GitHubDesktop\bin;C:\Program Files\MongoDB\Server\5.0\bin;
@@ -14,8 +14,8 @@ Platform:
   win32 x64
 
 Trace: 
-  Error: https://registry.yarnpkg.com/@types%2f: Request "https://registry.yarnpkg.com/@types%2f" returned a 405
-      at Request.params.callback [as _callback] (C:\Users\jacob\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:67038:18)
+  Error: https://registry.yarnpkg.com/password-local: Not found
+      at Request.params.callback [as _callback] (C:\Users\jacob\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:67029:18)
       at Request.self.callback (C:\Users\jacob\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:140883:22)
       at Request.emit (node:events:390:28)
       at Request.<anonymous> (C:\Users\jacob\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:141855:10)
@@ -57,6 +57,7 @@ npm manifest:
       "@types/express": "^4.17.13",
       "@types/http-errors": "^1.8.2",
       "@types/jquery": "^3.5.13",
+      "@types/mongoose": "^5.11.97",
       "@types/morgan": "^1.9.3",
       "@types/node": "^17.0.21"
     }
@@ -149,6 +150,13 @@ Lockfile:
     version "1.3.2"
     resolved "https://registry.yarnpkg.com/@types/mime/-/mime-1.3.2.tgz#93e25bf9ee75fe0fd80b594bc4feb0e862111b5a"
     integrity sha512-YATxVxgRqNH6nHEIsvg6k2Boc1JHI9ZbH5iWFFv/MTkchz3b1ieGDa5T0a9RznNdI0KhVbdbWSN+KWWrQZRxTw==
+  
+  "@types/mongoose@^5.11.97":
+    version "5.11.97"
+    resolved "https://registry.yarnpkg.com/@types/mongoose/-/mongoose-5.11.97.tgz#80b0357f3de6807eb597262f52e49c3e13ee14d8"
+    integrity sha512-cqwOVYT3qXyLiGw7ueU2kX9noE8DPGRY6z8eUxudhXY8NZ7DMKYAxyZkLSevGfhCX3dO/AoX5/SO9lAzfjon0Q==
+    dependencies:
+      mongoose "*"
   
   "@types/morgan@^1.9.3":
     version "1.9.3"
@@ -619,7 +627,7 @@ Lockfile:
     optionalDependencies:
       saslprep "^1.0.3"
   
-  mongoose@^6.2.9:
+  mongoose@*, mongoose@^6.2.9:
     version "6.2.9"
     resolved "https://registry.yarnpkg.com/mongoose/-/mongoose-6.2.9.tgz#6318dceeebdd23d30a5a414a98bdfeab13fc83ef"
     integrity sha512-6ApgF3rKYah5pUEO/1H+QrT0GT05OR7FprtVM45yzcrT/IKKlXizPyttrMiK1mLPt+55pGU7PMsBWY7yx/xZ4g==
