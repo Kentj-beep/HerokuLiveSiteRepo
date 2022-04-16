@@ -10,7 +10,7 @@ import { DisplayAddPage, DisplayContactListPage, DisplayEditPage, ProcessAddPage
 
 /* Temporary Routes - Contact-List Related */
 /* GET contact-list page. */
-router.get('/contact-list', DisplayContactListPage);
+router.get('/contact-list', AuthGuard, DisplayContactListPage);
 
 /* Display the Add Page. */
 router.get('/add', AuthGuard, DisplayAddPage);
